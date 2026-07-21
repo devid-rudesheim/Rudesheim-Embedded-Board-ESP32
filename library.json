@@ -1,11 +1,11 @@
 {
-  "name": "Rudesheim-Board-ESP32",
+  "name": "Rudesheim-Embedded-Board-ESP32",
   "version": "0.0.1",
   "description": "Rudesheim layer 2: Board interface implementation for ESP32.",
   "frameworks": "*",
   "platforms": "espressif32",
   "dependencies": {
-    "Rudesheim-Base": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Base.git#v0.0.1",
-    "Rudesheim-Foundation": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Foundation.git#v0.0.1"
+    "Rudesheim-Embedded-Base": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Base.git#v0.0.1",
+    "Rudesheim-Embedded-Foundation": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Foundation.git#v0.0.1"
   }
 }

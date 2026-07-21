@@ -2,9 +2,11 @@
 
 Rudesheim layer 2: Board interface implementation for ESP32.
 
-Pulls in [Rudesheim-Embedded-Base](https://github.com/devid-rudesheim/Rudesheim-Embedded-Base)
-and [Rudesheim-Embedded-Foundation](https://github.com/devid-rudesheim/Rudesheim-Embedded-Foundation)
-automatically as declared dependencies.
+This is a thin, architecture-constrained (`espressif32`) package with no
+source of its own — the actual implementation lives in
+[Rudesheim-Embedded-Board-Arduino](https://github.com/devid-rudesheim/Rudesheim-Embedded-Board-Arduino),
+since ESP32 uses nothing beyond standard Arduino API calls. It pulls in
+Base, Foundation, and Board-Arduino automatically as declared dependencies.
 
 ## Install
 

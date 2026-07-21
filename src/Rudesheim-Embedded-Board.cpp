@@ -9,7 +9,7 @@ namespace Rudesheim::Embedded
 {
   namespace
   {
-    struct ESP32:
+    struct Esp32:
       virtual public Board
     {
       virtual auto DigitalSignal() const -> Option::Signal const & override;
@@ -35,7 +35,7 @@ namespace Rudesheim::Embedded
   }
 
   Board const
-    &board = Class< ESP32 >::SoleObject();
+    &board = Class< Esp32 >::SoleObject();
 
   namespace Option
   {
@@ -152,37 +152,37 @@ namespace Rudesheim::Embedded
 
   namespace
   {
-    auto ESP32::DigitalSignal() const -> Option::Signal const &
+    auto Esp32::DigitalSignal() const -> Option::Signal const &
     {
       return Class< Option::Digital >::SoleObject();
     }
 
-    auto ESP32::Analog8BitSignal() const -> Option::Signal const &
+    auto Esp32::Analog8BitSignal() const -> Option::Signal const &
     {
       return Class< Option::Analog8Bit >::SoleObject();
     }
 
-    auto ESP32::Analog12BitSignal() const -> Option::Signal const &
+    auto Esp32::Analog12BitSignal() const -> Option::Signal const &
     {
       return Class< Option::Analog12Bit >::SoleObject();
     }
 
-    auto ESP32::DefaultMode() const -> Option::Mode const &
+    auto Esp32::DefaultMode() const -> Option::Mode const &
     {
       return Class< Option::Default >::SoleObject();
     }
 
-    auto ESP32::PullUpMode() const -> Option::Mode const &
+    auto Esp32::PullUpMode() const -> Option::Mode const &
     {
       return Class< Option::PullUp >::SoleObject();
     }
 
-    auto ESP32::SteadyOn() const -> Option::Steady const &
+    auto Esp32::SteadyOn() const -> Option::Steady const &
     {
       return Class< Option::On >::SoleObject();
     }
 
-    auto ESP32::SteadyOff() const -> Option::Steady const &
+    auto Esp32::SteadyOff() const -> Option::Steady const &
     {
       return Class< Option::Off >::SoleObject();
     }

@@ -21,7 +21,7 @@ namespace Rudesheim::Embedded
 
         if( WiFi.status() != WL_CONNECTED )
         {
-          throw std::runtime_error( "Failed to connect to WiFi" );
+          throw WifiConnectionError( "Failed to connect to WiFi" );
         }
 
         auto const

@@ -16,7 +16,7 @@ namespace Rudesheim::Embedded
 
         for( auto attempt = 0U; attempt < 100U && WiFi.status() != WL_CONNECTED; ++attempt )
         {
-          Milliseconds( 100 ).Wait();
+          board.Wait( Milliseconds( 100 ) );
         }
 
         if( WiFi.status() != WL_CONNECTED )

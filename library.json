@@ -6,7 +6,7 @@
   "platforms": "espressif32",
   "dependencies": {
     "Rudesheim-Embedded-Base": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Base.git#v0.0.1",
-    "Rudesheim-Embedded-Foundation": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Foundation.git#v0.0.1",
+    "Rudesheim-Embedded": "https://github.com/devid-rudesheim/Rudesheim-Embedded.git#v0.0.1",
     "Rudesheim-Embedded-Board-Arduino": "https://github.com/devid-rudesheim/Rudesheim-Embedded-Board-Arduino.git#v0.0.1"
   }
 }
